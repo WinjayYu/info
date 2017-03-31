@@ -7,8 +7,8 @@
         <li class="one_list" v-for="item in articleList.listData">
           <img class="list_img" src="../assets/blindcat.jpg" alt="">
           <div class="list_text">
-            <router-link 
-              :to="'/articledetail/' + item._id" 
+            <router-link
+              :to="'/articledetail/' + item._id"
               class="title"
             >
               {{ item.title }}
@@ -43,6 +43,7 @@
         >
         </el-pagination>
       </div>
+    </div>
   </transition>
 </template>
 

@@ -4,7 +4,7 @@ module.exports = {
 	// 当前的域名
 	domain: 'http://localhost',
 	// 数据库地址
-	mongodb: 'mongodb://blindcatvue:blindcatVue@localhost/vue',
+	mongodb: 'mongodb://localhost/blog',
 	// token有效期（天）
 	tokenExpireDays: 30,
 	// 邮件验证码配置
