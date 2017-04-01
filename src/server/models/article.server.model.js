@@ -59,7 +59,7 @@ var articleSchema = new mongoose.Schema({
 	},
 	auditStatus: {// 审核状态
 		type: Number,
-		default: 0
+		default: 1
 	}
 })
 

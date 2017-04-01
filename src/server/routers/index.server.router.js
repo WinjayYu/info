@@ -14,9 +14,10 @@ var data = {
 	'succeed': true,
 }
 // 路由器接收转发数据
-router
-	.get('/', function(req, res){
-		res.send(data)
-	})
+// router
+// 	.get('/', function(req, res){
+// 		res.send(data)
+// 	})
+
 
 module.exports = router

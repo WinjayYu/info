@@ -30,6 +30,7 @@ var login = require('./routers/login.server.router')
 var sendEmail = require('./routers/sendEmail.server.router')
 var updateAvatar = require('./routers/updateAvatar.server.router')
 var updateArticleImage = require('./routers/updateArticleImage.server.router')
+var removeArticle = require('./routers/removeArticle.server.router')
 
 // 设置使用handels模板引擎
 app.set('views', path.join(__dirname, 'views'));
@@ -43,7 +44,8 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
 // 监听请求并转发
-app.use('/', index)
+// app.use('/', index)
+app.use('/', article)
 app.use('/article', article)
 app.use('/newarticle', newArticle)
 app.use('/articledetail', articleDetail)
@@ -52,6 +54,7 @@ app.use('/login', login)
 app.use('/sendemail', sendEmail)
 app.use('/updateAvatar', updateAvatar)
 app.use('/updateArticleImage', updateArticleImage)
+app.use('/remove', removeArticle)
 
 // 监听端口
 app.listen(config.port, function () {
