@@ -31,8 +31,7 @@
               {{ item.abstract }}
             </p>
           </div>
-
-            <el-button type="primary" icon="delete" v-on:click="removeArticle(item._id)"></el-button>
+              <el-button type="primary" icon="delete" v-on:click="removeArticle(item._id)"></el-button>
 
         </li>
       </ul>

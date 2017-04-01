@@ -19,10 +19,9 @@ const mutations = {
 }
 
 const actions = {
-  removeArticle (context) {
-    let _id = context.getters.id();
+  removeArticle (id) {
     return axios.post(globalConfig.apiUrl + 'remove', {
-      _id: _id
+      _id: id
     }).then(rep => {
       return 'suss'
      // commit('removeArticle', rep.body)
