@@ -108,7 +108,26 @@
       },
       // 删除文章
       removeArticle (id) {
+        console.log(id)
         this.$store.dispatch('removeArticle', id)
+          .then(res => {
+            if (res.data.state) {
+              Notification({
+                title: '成功',
+                message: '投稿成功！',
+                type: 'success'
+              })
+            }
+          })
+          .catch(error => {
+            if (error.response) {
+              Notification({
+                title: '出错了',
+                message: '删除失败',
+                type: 'field'
+              })
+            }
+          })
       }
     },
     created () {

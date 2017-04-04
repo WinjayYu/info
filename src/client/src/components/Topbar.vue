@@ -6,7 +6,7 @@
       <a v-if="topbarMobile" @click="siderbarToggle" class="show_list_btn">
         <i class="iconfont icon-icon21"></i>
       </a>
-      <img src="../assets/blindcat.jpg" :class="topbarMobile ? 'img_small' : ''">
+      <img src="../assets/logo.jpg" :class="topbarMobile ? 'img_small' : ''">
       <a v-if="topbarMobile" href="#" class="search_btn">
         <i class="iconfont icon-search"></i>
       </a>
@@ -14,9 +14,9 @@
     <!-- 为根路由导航设置exact属性true -->
     <ul id="topbar" v-if="!topbarMobile">
       <li v-for="topbar_item in topbarData">
-        <router-link 
-          :to="{name: topbar_item.routerName}" 
-          :class="$route.name" 
+        <router-link
+          :to="{name: topbar_item.routerName}"
+          :class="$route.name"
           :exact="topbar_item.routerName == 'home'? true : false"
         >
           {{ topbar_item.name }}
@@ -84,8 +84,6 @@
   }
 
   #logo_box img{
-    width: 150px;
-    height: 150px;
     transition: all .7s;
     -webkit-transition: all .7s;
   }

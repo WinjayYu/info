@@ -2,11 +2,10 @@
 
 <template>
   <div>
-      <p class="list"><b>作者：</b>林志鹏</p>
-      <p class="list"><b>常用笔名：</b>瞎猫（blindcat）</p>
-      <p class="list"><b>Github：</b><a target="_blank" href="https://github.com/linzhipeng">https://github.com/linzhipeng</a></p>
-      <p class="list"><b>联系邮箱：</b>839884316@qq.com</p>
-      <p class="list">大三学生。前端爱好者，Node爱好者，篮球爱好者。</p>
+      <p class="list"><b>作者：</b>余文杰</p>
+      <p class="list"><b>Github：</b><a target="_blank" href="https://github.com/winjayyu">https://github.com/winjayyu</a></p>
+      <p class="list"><b>联系邮箱：</b>winjayyu@qq.com</p>
+      <p class="list">大四学生 java/nodejs开发工程师</p>
   </div>
 </template>
 
